@@ -13,11 +13,11 @@ import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
-import com.adms.common.domain.BaseDomain;
+import com.adms.common.domain.BaseAuditDomain;
 
 @Entity
 @Table(name="TSR_HIERARCHY")
-public class TsrHierarchy extends BaseDomain {
+public class TsrHierarchy extends BaseAuditDomain {
 
 	private static final long serialVersionUID = -3479527794880160757L;
 

@@ -1,5 +1,6 @@
 package com.adms.entity;
 
+import java.math.BigDecimal;
 import java.util.Date;
 
 import javax.persistence.Column;
@@ -98,35 +99,35 @@ public class TsrTracking extends BaseAuditDomain {
 	@Column(name="DMC_NO_PRESENT")
 	private Integer dmcNoPresent;
 	
-	@Column(name="DMC_CONTACT_RATE")
-	private Double dmcContactRate;
+	@Column(name="DMC_CONTACT_RATE", scale=13)
+	private BigDecimal dmcContactRate;
 	
-	@Column(name="CPH")
-	private Double cph;
+	@Column(name="CPH", scale=13)
+	private BigDecimal cph;
 	
-	@Column(name="SPH")
-	private Double sph;
+	@Column(name="SPH", scale=13)
+	private BigDecimal sph;
 	
-	@Column(name="SPC_TOTAL")
-	private Double spcTotal;
+	@Column(name="SPC_TOTAL", scale=13)
+	private BigDecimal spcTotal;
 	
-	@Column(name="SPC_PRESENT")
-	private Double spcPresent;
+	@Column(name="SPC_PRESENT", scale=13)
+	private BigDecimal spcPresent;
 	
-	@Column(name="WORK_HOURS")
-	private Double workHours;
+	@Column(name="WORK_HOURS", scale=13)
+	private BigDecimal workHours;
 	
-	@Column(name="DMC_AVG_TALK_TIME")
-	private Double dmcAvgTalkTime;
+	@Column(name="DMC_AVG_TALK_TIME", scale=13)
+	private BigDecimal dmcAvgTalkTime;
 	
-	@Column(name="MAX_TALK_TIME")
-	private Double maxTalkTime;
+	@Column(name="MAX_TALK_TIME", scale=13)
+	private BigDecimal maxTalkTime;
 	
-	@Column(name="DMC_TALK_TIME")
-	private Double dmcTalkTime;
+	@Column(name="DMC_TALK_TIME", scale=13)
+	private BigDecimal dmcTalkTime;
 	
-	@Column(name="TOTAL_TALK_TIME")
-	private Double totalTalkTime;
+	@Column(name="TOTAL_TALK_TIME", scale=13)
+	private BigDecimal totalTalkTime;
 
 	public Long getId() {
 		return id;
@@ -312,83 +313,83 @@ public class TsrTracking extends BaseAuditDomain {
 		this.dmcNoPresent = dmcNoPresent;
 	}
 
-	public Double getDmcContactRate() {
+	public BigDecimal getDmcContactRate() {
 		return dmcContactRate;
 	}
 
-	public void setDmcContactRate(Double dmcContactRate) {
+	public void setDmcContactRate(BigDecimal dmcContactRate) {
 		this.dmcContactRate = dmcContactRate;
 	}
 
-	public Double getCph() {
+	public BigDecimal getCph() {
 		return cph;
 	}
 
-	public void setCph(Double cph) {
+	public void setCph(BigDecimal cph) {
 		this.cph = cph;
 	}
 
-	public Double getSph() {
+	public BigDecimal getSph() {
 		return sph;
 	}
 
-	public void setSph(Double sph) {
+	public void setSph(BigDecimal sph) {
 		this.sph = sph;
 	}
 
-	public Double getSpcTotal() {
+	public BigDecimal getSpcTotal() {
 		return spcTotal;
 	}
 
-	public void setSpcTotal(Double spcTotal) {
+	public void setSpcTotal(BigDecimal spcTotal) {
 		this.spcTotal = spcTotal;
 	}
 
-	public Double getSpcPresent() {
+	public BigDecimal getSpcPresent() {
 		return spcPresent;
 	}
 
-	public void setSpcPresent(Double spcPresent) {
+	public void setSpcPresent(BigDecimal spcPresent) {
 		this.spcPresent = spcPresent;
 	}
 
-	public Double getWorkHours() {
+	public BigDecimal getWorkHours() {
 		return workHours;
 	}
 
-	public void setWorkHours(Double workHours) {
+	public void setWorkHours(BigDecimal workHours) {
 		this.workHours = workHours;
 	}
 
-	public Double getDmcAvgTalkTime() {
+	public BigDecimal getDmcAvgTalkTime() {
 		return dmcAvgTalkTime;
 	}
 
-	public void setDmcAvgTalkTime(Double dmcAvgTalkTime) {
+	public void setDmcAvgTalkTime(BigDecimal dmcAvgTalkTime) {
 		this.dmcAvgTalkTime = dmcAvgTalkTime;
 	}
 
-	public Double getMaxTalkTime() {
+	public BigDecimal getMaxTalkTime() {
 		return maxTalkTime;
 	}
 
-	public void setMaxTalkTime(Double maxTalkTime) {
+	public void setMaxTalkTime(BigDecimal maxTalkTime) {
 		this.maxTalkTime = maxTalkTime;
 	}
 
-	public Double getDmcTalkTime() {
+	public BigDecimal getDmcTalkTime() {
 		return dmcTalkTime;
 	}
 
-	public void setDmcTalkTime(Double dmcTalkTime) {
+	public void setDmcTalkTime(BigDecimal dmcTalkTime) {
 		this.dmcTalkTime = dmcTalkTime;
 	}
 
-	public Double getTotalTalkTime() {
+	public BigDecimal getTotalTalkTime() {
 		return totalTalkTime;
 	}
 
-	public void setTotalTalkTime(Double totalTalkTime) {
+	public void setTotalTalkTime(BigDecimal totalTalkTime) {
 		this.totalTalkTime = totalTalkTime;
 	}
 

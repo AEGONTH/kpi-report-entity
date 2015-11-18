@@ -67,6 +67,10 @@ public class Tsr extends BaseAuditDomain {
 	@Column(name = "RESIGN_DATE")
 	@Temporal(TemporalType.DATE)
 	private Date resignDate;
+	
+	@Column(name="FLOOR_DATE")
+	@Temporal(TemporalType.DATE)
+	private Date floorDate;
 
 	@Column(name = "REMARK")
 	private String remark;
@@ -84,9 +88,10 @@ public class Tsr extends BaseAuditDomain {
 		return id;
 	}
 
-	public void setId(Long id)
+	public Tsr setId(Long id)
 	{
 		this.id = id;
+		return this;
 	}
 
 	public String getTsrCode()
@@ -94,9 +99,10 @@ public class Tsr extends BaseAuditDomain {
 		return tsrCode;
 	}
 
-	public void setTsrCode(String tsrCode)
+	public Tsr setTsrCode(String tsrCode)
 	{
 		this.tsrCode = tsrCode;
+		return this;
 	}
 
 	public TsrPosition getTsrPosition()
@@ -104,9 +110,10 @@ public class Tsr extends BaseAuditDomain {
 		return tsrPosition;
 	}
 
-	public void setTsrPosition(TsrPosition tsrPosition)
+	public Tsr setTsrPosition(TsrPosition tsrPosition)
 	{
 		this.tsrPosition = tsrPosition;
+		return this;
 	}
 
 	public TsrStatus getTsrStatus()
@@ -114,9 +121,10 @@ public class Tsr extends BaseAuditDomain {
 		return tsrStatus;
 	}
 
-	public void setTsrStatus(TsrStatus tsrStatus)
+	public Tsr setTsrStatus(TsrStatus tsrStatus)
 	{
 		this.tsrStatus = tsrStatus;
+		return this;
 	}
 
 	public String getEmployeeCode()
@@ -124,9 +132,10 @@ public class Tsr extends BaseAuditDomain {
 		return employeeCode;
 	}
 
-	public void setEmployeeCode(String employeeCode)
+	public Tsr setEmployeeCode(String employeeCode)
 	{
 		this.employeeCode = employeeCode;
+		return this;
 	}
 
 	public String getFullName()
@@ -134,9 +143,10 @@ public class Tsr extends BaseAuditDomain {
 		return fullName;
 	}
 
-	public void setFullName(String fullName)
+	public Tsr setFullName(String fullName)
 	{
 		this.fullName = fullName;
+		return this;
 	}
 
 	public String getTitle()
@@ -144,9 +154,10 @@ public class Tsr extends BaseAuditDomain {
 		return title;
 	}
 
-	public void setTitle(String title)
+	public Tsr setTitle(String title)
 	{
 		this.title = title;
+		return this;
 	}
 
 	public String getFirstName()
@@ -154,9 +165,10 @@ public class Tsr extends BaseAuditDomain {
 		return firstName;
 	}
 
-	public void setFirstName(String firstName)
+	public Tsr setFirstName(String firstName)
 	{
 		this.firstName = firstName;
+		return this;
 	}
 
 	public String getMidName()
@@ -164,9 +176,10 @@ public class Tsr extends BaseAuditDomain {
 		return midName;
 	}
 
-	public void setMidName(String midName)
+	public Tsr setMidName(String midName)
 	{
 		this.midName = midName;
+		return this;
 	}
 
 	public String getLastName()
@@ -174,9 +187,10 @@ public class Tsr extends BaseAuditDomain {
 		return lastName;
 	}
 
-	public void setLastName(String lastName)
+	public Tsr setLastName(String lastName)
 	{
 		this.lastName = lastName;
+		return this;
 	}
 
 	public Date getEffectiveDate()
@@ -184,9 +198,10 @@ public class Tsr extends BaseAuditDomain {
 		return effectiveDate;
 	}
 
-	public void setEffectiveDate(Date effectiveDate)
+	public Tsr setEffectiveDate(Date effectiveDate)
 	{
 		this.effectiveDate = effectiveDate;
+		return this;
 	}
 
 	public Date getResignDate()
@@ -194,9 +209,10 @@ public class Tsr extends BaseAuditDomain {
 		return resignDate;
 	}
 
-	public void setResignDate(Date resignDate)
+	public Tsr setResignDate(Date resignDate)
 	{
 		this.resignDate = resignDate;
+		return this;
 	}
 
 	public String getRemark()
@@ -204,9 +220,10 @@ public class Tsr extends BaseAuditDomain {
 		return remark;
 	}
 
-	public void setRemark(String remark)
+	public Tsr setRemark(String remark)
 	{
 		this.remark = remark;
+		return this;
 	}
 
 	@Override
@@ -214,6 +231,15 @@ public class Tsr extends BaseAuditDomain {
 	{
 		return "Tsr [id=" + id + ", tsrCode=" + tsrCode + ", tsrPosition=" + tsrPosition + ", tsrStatus=" + tsrStatus + ", employeeCode=" + employeeCode + ", fullName=" + fullName + ", title=" + title + ", firstName=" + firstName + ", midName=" + midName + ", lastName=" + lastName
 				+ ", effectiveDate=" + effectiveDate + ", resignDate=" + resignDate + ", remark=" + remark + "]";
+	}
+
+	public Date getFloorDate() {
+		return floorDate;
+	}
+
+	public Tsr setFloorDate(Date floorDate) {
+		this.floorDate = floorDate;
+		return this;
 	}
 
 }
